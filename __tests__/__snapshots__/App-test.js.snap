@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly ShowSomething 1`] = `
+<Text>
+  Sum: 
+  10
+  
+
+  Sub: 
+  5
+  
+
+  Div: 
+  2
+  
+
+  Mult: 
+  50
+  
+
+</Text>
+`;
