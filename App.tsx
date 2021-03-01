@@ -1,5 +1,5 @@
 /**
- * Sample React Native App
+ * React native calculator using typescript
  * https://github.com/facebook/react-native
  *
  * @format
@@ -13,15 +13,21 @@ import {
   StatusBar,
 } from 'react-native';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
 import { ShowSomething } from './screens/first-screen';
+
+const Stack = createStackNavigator();
 
 const App: () => React$Node = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ShowSomething />
-      </SafeAreaView>
+    <>      
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Home" component={ShowSomething} />
+        </Stack.Navigator>
+      </NavigationContainer>
     </>
   );
 };
