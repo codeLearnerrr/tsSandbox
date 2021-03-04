@@ -3,28 +3,28 @@ interface Props {
     secondNumber: number;
 }
 
-const SumOperation = (props: Props) => {
+const AddOperation = (props: Props): number => {
     const result = props.firstNumber + props.secondNumber;
 
-    return result;
+    return parseFloat(result.toFixed(2));
 }
 
-const SubtractOperation = (props: Props) => {
+const SubtractOperation = (props: Props): number => {
     const result = props.firstNumber - props.secondNumber;
 
-    return result;
+    return parseFloat(result.toFixed(2));
 }
 
-const DivideOperation = (props: Props) => {
+const DivideOperation = (props: Props): number => {
     const result = props.firstNumber / props.secondNumber;
 
-    return result;
+    return parseFloat(result.toFixed(2));
 }
 
-const MultiplyOperation = (props: Props) => {
+const MultiplyOperation = (props: Props): number => {
     const result = props.firstNumber * props.secondNumber;
 
-    return result;
+    return parseFloat(result.toFixed(2));
 }
 
-export { SumOperation, SubtractOperation, DivideOperation, MultiplyOperation };
+export { AddOperation, SubtractOperation, DivideOperation, MultiplyOperation };
