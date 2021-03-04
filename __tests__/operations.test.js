@@ -1,5 +1,5 @@
 import {
-    SumOperation,
+    AddOperation,
     SubtractOperation,
     DivideOperation,
     MultiplyOperation
@@ -8,7 +8,7 @@ import {
 
 // Operations + , - , / and *
 test('tests if sum operation sums correctly', () => {
-    expect(SumOperation({ firstNumber: 2, secondNumber: 3 })).toBe(5);
+    expect(AddOperation({ firstNumber: 2, secondNumber: 3 })).toBe(5);
   })
   
   test('tests if subtract operation subtracts correctly', () => {

@@ -1,13 +1,200 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly ShowSomething 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <Image
+    resizeMethod="resize"
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../assets/image.jpg",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "borderRadius": 10,
+        "height": 100,
+        "marginTop": 10,
+        "width": 100,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontSize": 30,
+          "marginBottom": 30,
+          "textAlign": "center",
+        }
+      }
+    >
+      Type numbers in
+      
+
+       each grey box to calculate:
+    </Text>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "maxHeight": 100,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+            "flexDirection": "row",
+          }
+        }
+      >
+        <TextInput
+          allowFontScaling={true}
+          collapsable={false}
+          keyboardType="numeric"
+          onChangeText={[Function]}
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          placeholder=""
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "backgroundColor": "rgba(0,0,0,.1)",
+              "borderBottomWidth": 1,
+              "borderColor": "grey",
+              "borderRadius": 8,
+              "fontSize": 20,
+              "maxHeight": 70,
+              "maxWidth": 70,
+              "textAlign": "center",
+              "width": 70,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+        <Text
+          style={
+            Object {
+              "fontSize": 15,
+              "marginHorizontal": 15,
+            }
+          }
+        >
+          
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          collapsable={false}
+          keyboardType="numeric"
+          onChangeText={[Function]}
+          onGestureHandlerEvent={[Function]}
+          onGestureHandlerStateChange={[Function]}
+          placeholder=""
+          rejectResponderTermination={true}
+          style={
+            Object {
+              "backgroundColor": "rgba(0,0,0,.1)",
+              "borderBottomWidth": 1,
+              "borderColor": "grey",
+              "borderRadius": 8,
+              "fontSize": 20,
+              "maxHeight": 70,
+              "maxWidth": 70,
+              "textAlign": "center",
+              "width": 70,
+            }
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "maxHeight": 200,
+          "maxWidth": 300,
+        }
+      }
+    >
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "fontSize": 25,
+          }
+        }
+      >
+        Addition: 
+        0
+      </Text>
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "fontSize": 25,
+          }
+        }
+      >
+        Subtraction: 
+        0
+         
+      </Text>
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "fontSize": 25,
+          }
+        }
+      >
+        Division: 
+        NaN
+         
+      </Text>
+      <Text
+        numberOfLines={1}
+        style={
+          Object {
+            "fontSize": 25,
+          }
+        }
+      >
+        Multiplication: 
+        0
+         
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`renders correctly ShowSomething2 1`] = `
 Array [
   <Image
     resizeMethod="resize"
     resizeMode="contain"
     source={
       Object {
-        "process": [Function],
+        "testUri": "../../../assets/image.jpg",
       }
     }
     style={
@@ -27,7 +214,7 @@ Array [
     }
   >
     <Text>
-      Sum: 
+      Second screen! Addition: 
       10
       
 
