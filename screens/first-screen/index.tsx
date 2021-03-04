@@ -22,14 +22,14 @@ export const ShowSomething = ({ navigation }: any) => {
     const [secondValue, setSecondValue] = useState<number>(0);
 
     return (
-        <View style={{ flex: 1, alignItems: 'center' }}>
+        <KeyboardAvoidingView behavior='height' style={{ flex: 1, alignItems: 'center', justifyContent: 'space-between',}}>
             {/* <Button title='go to second screen' onPress={() => navigation.navigate('NotHome')} /> */}
 
             < Image
                 resizeMethod='resize'
                 resizeMode='contain'
                 source={randomImage}
-                style={{ width: 100, height: 100, alignSelf: 'center', borderRadius: 10, marginTop: 10 }
+                style={{ width: 100, height: 100, alignSelf: 'center', borderRadius: 10, marginTop: 30 }
                 }
             />
 
@@ -37,7 +37,7 @@ export const ShowSomething = ({ navigation }: any) => {
                 Type numbers in{'\n'} each grey box to calculate:
                 </Text>
 
-            <View style={{ flex: 1, flexDirection: 'column', maxHeight: 100, }}>
+            <View style={{ flex: 1, flexDirection: 'column', maxHeight: 100, minHeight: 100 }}>
                 <View style={{ flex: 1, flexDirection: 'row' }}>
                     <TextInput placeholder='' keyboardType='numeric' style={{
                         borderColor: 'grey',
@@ -81,7 +81,7 @@ export const ShowSomething = ({ navigation }: any) => {
 
             </View>
 
-        </View>
+        </KeyboardAvoidingView>
     )
 }
 
