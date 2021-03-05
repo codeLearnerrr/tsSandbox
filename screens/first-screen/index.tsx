@@ -3,7 +3,6 @@ import {
     View,
     Text,
     Image,
-    KeyboardAvoidingView,
     Button
 } from 'react-native'
 import {
@@ -16,15 +15,14 @@ import {
 import randomImage from '../../assets/image.jpg';
 import { TextInput } from 'react-native-gesture-handler';
 
-
 export const ShowSomething = ({ navigation }: any) => {
     const [firstValue, setFirstValue] = useState<number>(0);
     const [secondValue, setSecondValue] = useState<number>(0);
 
     return (
-        <KeyboardAvoidingView behavior='height' style={{ flex: 1, alignItems: 'center', justifyContent: 'space-between',}}>
-            {/* <Button title='go to second screen' onPress={() => navigation.navigate('NotHome')} /> */}
-
+        <View style={{ flex: 1, alignItems: 'center', justifyContent: 'space-between', }}>
+            <Button title='go to second screen' onPress={() => navigation.navigate('NotHome')} />
+            
             < Image
                 resizeMethod='resize'
                 resizeMode='contain'
@@ -32,7 +30,6 @@ export const ShowSomething = ({ navigation }: any) => {
                 style={{ width: 100, height: 100, alignSelf: 'center', borderRadius: 10, marginTop: 30 }
                 }
             />
-
             <Text style={{ fontSize: 30, marginBottom: 30, textAlign: 'center' }}>
                 Type numbers in{'\n'} each grey box to calculate:
                 </Text>
@@ -81,7 +78,7 @@ export const ShowSomething = ({ navigation }: any) => {
 
             </View>
 
-        </KeyboardAvoidingView>
+        </View>
     )
 }
 

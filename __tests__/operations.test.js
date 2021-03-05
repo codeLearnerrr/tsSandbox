@@ -19,6 +19,6 @@ test('tests if divide operation divides correctly', () => {
   expect(DivideOperation({ firstNumber: 24, secondNumber: 12 })).toBe(2);
 })
 
-test('tests if multiplie operation multiplies correctly', () => {
+test('tests if multiply operation multiplies correctly', () => {
   expect(MultiplyOperation({ firstNumber: 2, secondNumber: 2 })).toBe(4);
 })

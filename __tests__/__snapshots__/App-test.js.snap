@@ -4,10 +4,53 @@ exports[`renders correctly ShowSomething 1`] = `
 <View
   style={
     Object {
+      "alignItems": "center",
       "flex": 1,
+      "justifyContent": "space-between",
     }
   }
 >
+  <View
+    accessibilityRole="button"
+    accessibilityState={Object {}}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        go to second screen
+      </Text>
+    </View>
+  </View>
   <Image
     resizeMethod="resize"
     resizeMode="contain"
@@ -21,174 +64,206 @@ exports[`renders correctly ShowSomething 1`] = `
         "alignSelf": "center",
         "borderRadius": 10,
         "height": 100,
-        "marginTop": 10,
+        "marginTop": 30,
         "width": 100,
       }
     }
   />
+  <Text
+    style={
+      Object {
+        "fontSize": 30,
+        "marginBottom": 30,
+        "textAlign": "center",
+      }
+    }
+  >
+    Type numbers in
+    
+
+     each grey box to calculate:
+  </Text>
   <View
     style={
       Object {
-        "alignItems": "center",
         "flex": 1,
-        "justifyContent": "center",
+        "flexDirection": "column",
+        "maxHeight": 100,
+        "minHeight": 100,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "flexDirection": "row",
+        }
+      }
+    >
+      <TextInput
+        allowFontScaling={true}
+        collapsable={false}
+        keyboardType="numeric"
+        onChangeText={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        placeholder=""
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.1)",
+            "borderBottomWidth": 1,
+            "borderColor": "grey",
+            "borderRadius": 8,
+            "fontSize": 20,
+            "maxHeight": 70,
+            "maxWidth": 70,
+            "textAlign": "center",
+            "width": 70,
+          }
+        }
+        underlineColorAndroid="transparent"
+      />
+      <Text
+        style={
+          Object {
+            "fontSize": 15,
+            "marginHorizontal": 15,
+          }
+        }
+      >
+        
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        collapsable={false}
+        keyboardType="numeric"
+        onChangeText={[Function]}
+        onGestureHandlerEvent={[Function]}
+        onGestureHandlerStateChange={[Function]}
+        placeholder=""
+        rejectResponderTermination={true}
+        style={
+          Object {
+            "backgroundColor": "rgba(0,0,0,.1)",
+            "borderBottomWidth": 1,
+            "borderColor": "grey",
+            "borderRadius": 8,
+            "fontSize": 20,
+            "maxHeight": 70,
+            "maxWidth": 70,
+            "textAlign": "center",
+            "width": 70,
+          }
+        }
+        underlineColorAndroid="transparent"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "maxHeight": 200,
+        "maxWidth": 300,
       }
     }
   >
     <Text
+      numberOfLines={1}
       style={
         Object {
-          "fontSize": 30,
-          "marginBottom": 30,
-          "textAlign": "center",
+          "fontSize": 25,
         }
       }
     >
-      Type numbers in
-      
-
-       each grey box to calculate:
+      Addition: 
+      0
     </Text>
-    <View
+    <Text
+      numberOfLines={1}
       style={
         Object {
-          "flex": 1,
-          "flexDirection": "column",
-          "maxHeight": 100,
+          "fontSize": 25,
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flex": 1,
-            "flexDirection": "row",
-          }
-        }
-      >
-        <TextInput
-          allowFontScaling={true}
-          collapsable={false}
-          keyboardType="numeric"
-          onChangeText={[Function]}
-          onGestureHandlerEvent={[Function]}
-          onGestureHandlerStateChange={[Function]}
-          placeholder=""
-          rejectResponderTermination={true}
-          style={
-            Object {
-              "backgroundColor": "rgba(0,0,0,.1)",
-              "borderBottomWidth": 1,
-              "borderColor": "grey",
-              "borderRadius": 8,
-              "fontSize": 20,
-              "maxHeight": 70,
-              "maxWidth": 70,
-              "textAlign": "center",
-              "width": 70,
-            }
-          }
-          underlineColorAndroid="transparent"
-        />
-        <Text
-          style={
-            Object {
-              "fontSize": 15,
-              "marginHorizontal": 15,
-            }
-          }
-        >
-          
-        </Text>
-        <TextInput
-          allowFontScaling={true}
-          collapsable={false}
-          keyboardType="numeric"
-          onChangeText={[Function]}
-          onGestureHandlerEvent={[Function]}
-          onGestureHandlerStateChange={[Function]}
-          placeholder=""
-          rejectResponderTermination={true}
-          style={
-            Object {
-              "backgroundColor": "rgba(0,0,0,.1)",
-              "borderBottomWidth": 1,
-              "borderColor": "grey",
-              "borderRadius": 8,
-              "fontSize": 20,
-              "maxHeight": 70,
-              "maxWidth": 70,
-              "textAlign": "center",
-              "width": 70,
-            }
-          }
-          underlineColorAndroid="transparent"
-        />
-      </View>
-    </View>
-    <View
+      Subtraction: 
+      0
+       
+    </Text>
+    <Text
+      numberOfLines={1}
       style={
         Object {
-          "flex": 1,
-          "maxHeight": 200,
-          "maxWidth": 300,
+          "fontSize": 25,
         }
       }
     >
-      <Text
-        numberOfLines={1}
-        style={
-          Object {
-            "fontSize": 25,
-          }
+      Division: 
+      NaN
+       
+    </Text>
+    <Text
+      numberOfLines={1}
+      style={
+        Object {
+          "fontSize": 25,
         }
-      >
-        Addition: 
-        0
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Object {
-            "fontSize": 25,
-          }
-        }
-      >
-        Subtraction: 
-        0
-         
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Object {
-            "fontSize": 25,
-          }
-        }
-      >
-        Division: 
-        NaN
-         
-      </Text>
-      <Text
-        numberOfLines={1}
-        style={
-          Object {
-            "fontSize": 25,
-          }
-        }
-      >
-        Multiplication: 
-        0
-         
-      </Text>
-    </View>
+      }
+    >
+      Multiplication: 
+      0
+       
+    </Text>
   </View>
 </View>
 `;
 
 exports[`renders correctly ShowSomething2 1`] = `
 Array [
+  <View
+    accessibilityRole="button"
+    accessibilityState={Object {}}
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {},
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        go to second screen
+      </Text>
+    </View>
+  </View>,
   <Image
     resizeMethod="resize"
     resizeMode="contain"
@@ -214,22 +289,7 @@ Array [
     }
   >
     <Text>
-      Second screen! Addition: 
-      10
-      
-
-      Sub: 
-      5
-      
-
-      Div: 
-      2
-      
-
-      Mult: 
-      50
-      
-
+      Second screen here
     </Text>
   </View>,
 ]
